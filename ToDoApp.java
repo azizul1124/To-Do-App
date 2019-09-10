@@ -9,7 +9,6 @@ public class ToDoApp extends Tasks
 {
 	static Scanner input;
 	public static Tasks task;
-	ToDoApp app;
 	
 	public static void main(String[] args) 
 	{
