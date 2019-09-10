@@ -69,8 +69,16 @@ public class ToDoApp extends Tasks
 	{
 		System.out.println("Enter a task to delete");
 		task = input.nextLine();
-		Tasks.tasksArray.remove(task);
-		System.out.println("Task deleted");
+		
+		if(!tasksArray.contains(task))
+			System.out.println("Task not found");
+		
+		else
+		{
+			Tasks.tasksArray.remove(task);
+			System.out.println("Task deleted");
+		}
+		
 		System.out.println();
 	}
 	
